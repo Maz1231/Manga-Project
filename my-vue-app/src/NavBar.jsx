@@ -17,7 +17,7 @@ function NavBar({ user, setUser }) {function handleLogoutClick() {
       </div>
         {user ? (
           <>
-          
+            <NavLink to="/books">Books</NavLink>
             <NavLink to="/">
               <button className="click" onClick={handleLogoutClick}>Logout</button>
             </NavLink>

@@ -5,6 +5,7 @@ import Login from "./Login";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import SignIn from "./SignIn";
+import Books from "./pages/Book"
 
 
 function App() {
@@ -46,6 +47,11 @@ console.log("***user: ", user)
          </Switch>
         </>
       )}
+      <Switch>
+          <Route path="/books">
+            <Books />
+          </Route>
+      </Switch>
     </main> 
     </BrowserRouter>
   );
