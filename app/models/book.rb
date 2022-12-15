@@ -6,4 +6,5 @@ class Book < ApplicationRecord
   validates :year, presence: true
   validates :price, presence: true
   validates :buy, presence: true
+  validates :description, presence: true
 end
