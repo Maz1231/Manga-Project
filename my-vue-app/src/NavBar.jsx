@@ -18,6 +18,7 @@ function NavBar({ user, setUser }) {function handleLogoutClick() {
         {user ? (
           <>
             <NavLink to="/books">Books</NavLink>
+            <NavLink to="/authors">Authors</NavLink>
             <NavLink to="/">
               <button className="click" onClick={handleLogoutClick}>Logout</button>
             </NavLink>

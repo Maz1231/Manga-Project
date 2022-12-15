@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import SignIn from "./SignIn";
 import Books from "./pages/Book"
+import Authors from "./pages/Author"
 
 
 function App() {
@@ -50,6 +51,9 @@ console.log("***user: ", user)
       <Switch>
           <Route path="/books">
             <Books />
+          </Route>
+          <Route path="/authors">
+            <Authors />
           </Route>
       </Switch>
     </main> 
