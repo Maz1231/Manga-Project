@@ -7,6 +7,7 @@ import Home from "./Home";
 import SignIn from "./SignIn";
 import Books from "./pages/Book"
 import Authors from "./pages/Author"
+import Categories from "./pages/Category"
 
 
 function App() {
@@ -54,6 +55,9 @@ console.log("***user: ", user)
           </Route>
           <Route path="/authors">
             <Authors />
+          </Route>
+          <Route path="/categories">
+            <Categories />
           </Route>
       </Switch>
     </main> 
