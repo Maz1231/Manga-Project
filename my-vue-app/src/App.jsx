@@ -1,3 +1,4 @@
+import "./index.css"
 import React, { useEffect, useState } from "react";
 import {BrowserRouter, Switch, Route } from "react-router-dom";
 import SignUp from "./SignUp";

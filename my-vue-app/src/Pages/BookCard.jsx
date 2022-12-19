@@ -1,7 +1,7 @@
 import React from "react";
 // import {NavLink} from "react-router-dom";
 import BookDetails from "./BookDetails";
-import NewBookFrom from "./NewBookForm";
+import NewBookForm from "./NewBookForm";
 
 const BookCard = ({ book, setBook, onDeleteBook }) => {
 const books = book.map((b) => {
@@ -16,14 +16,16 @@ const books = book.map((b) => {
 
     return (    
         <div>
-            <NewBookFrom 
+            <NewBookForm 
             book = {book}
             setBook = {setBook}
             />
             {/* <PlayerDetails></PlayerDetails> */}
+            <div style={{display: "flex", flexWrap: "wrap"}}>
             <div className="allCards">
             {books}
         </div> 
+        </div>
         </div>
 
     )
