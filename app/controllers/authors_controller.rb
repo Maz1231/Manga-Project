@@ -30,7 +30,7 @@ class AuthorsController < ApplicationController
     private
 
     def authors_params
-        params.permit(:first_name, :last_name)
+        params.permit(:image, :first_name, :last_name, :bio)
     end
 
 end

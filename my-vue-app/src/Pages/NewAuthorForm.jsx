@@ -3,6 +3,8 @@ import React, { useEffect, useState }  from "react";
 function NewAuthorForm({author, setAuthor}) {
     const [first_name, setFirstName] = useState("");
     const [last_name, setLastName] = useState("");
+    const [image, setImage] = useState("");
+    const [bio, setBio] = useState("");
 
 
     function handleSumbit(e) {
@@ -16,6 +18,8 @@ function NewAuthorForm({author, setAuthor}) {
             body: JSON.stringify({
                 first_name: first_name,
                 last_name: last_name,
+                image: image,
+                bio: bio,
             }),
         })
         .then((r) => r.json())
@@ -24,6 +28,8 @@ function NewAuthorForm({author, setAuthor}) {
         });
         setFirstName("");
         setLastName("");
+        setBio("");
+        setImage("");
     }
 
     return (
@@ -43,6 +49,20 @@ function NewAuthorForm({author, setAuthor}) {
                 name="LastName"
                 value={last_name}
                 onChange={(e) => setLastName(e.target.value)}
+                >
+                </input>
+                <input
+                placeholder="image"
+                name="image"
+                value={image}
+                onChange={(e) => setImage(e.target.value)}
+                >
+                </input>
+                <input
+                placeholder="Bio"
+                name="Bio"
+                value={bio}
+                onChange={(e) => setBio(e.target.value)}
                 >
                 </input>
                 <button className="b" type="submit"> Enter Store!</button>

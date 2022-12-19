@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_15_024539) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_19_195733) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "authors", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
+    t.string "image"
+    t.string "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -29,14 +31,27 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_15_024539) do
     t.string "buy"
     t.string "image"
     t.string "description"
-    t.integer "author_id"
-    t.integer "category_id"
+    t.bigint "author_id", null: false
+    t.bigint "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_books_on_author_id"
+    t.index ["category_id"], name: "index_books_on_category_id"
   end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string "image"
+    t.string "name"
+    t.string "description"
+    t.integer "price"
+    t.string "rating"
+    t.string "stock"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,4 +63,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_15_024539) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "books", "authors"
+  add_foreign_key "books", "categories"
 end
