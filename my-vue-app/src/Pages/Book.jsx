@@ -2,9 +2,11 @@ import React, {useEffect, useState}  from "react";
 // import { UserContext } from "../context/context";
 // import NavBar from "./NavBar";
 import BookCard from "./BookCard";
+import BookSearch from "./BookSearch"
 
 const Book = () => {
     const [book, setBook] = useState([]);
+    const [searchBook, setSearchBook] = useState("")
     
    
     
@@ -27,13 +29,18 @@ const Book = () => {
       setBook(removeBook)
     }
 
+    const showBook = book.filter((t) => {
+      return t.title.toLowerCase().includes(searchBook.toLowerCase())
+    })
+
       
    
 
     return ( 
       <div>
+        <BookSearch searchBook={searchBook} onSearchBook={setSearchBook}/>
         <BookCard 
-        book={book} b
+        book={showBook} 
         setBook={setBook}
         onDeleteBook={handleDeleteBooks}
         />
