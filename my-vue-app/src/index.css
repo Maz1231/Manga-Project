@@ -9,8 +9,10 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #070500;
+  color: rgba(249, 249, 249, 0.87);
+  /* background-image: url(https://wallpaperaccess.com/full/5056828.jpg), url(https://wallpaperaccess.com/full/5056828.jpg); */
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -41,7 +43,7 @@ header {
   align-items: center;
   width: 100%;
   border-bottom: 5px solid rgb(103, 73, 103);
-  background-color: rgb(12, 11, 12);
+  background-color: rgb(228, 201, 228);
   
 }
 
@@ -73,7 +75,7 @@ header a {
 } */
 
 form {
-  background-color: #64593d;
+  background-color: #e2bae4;
   border: 10px solid rgb(248, 248, 248);
   display: flex;
   flex-direction: column;
