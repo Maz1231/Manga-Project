@@ -3,13 +3,14 @@ import React from "react";
 import BookDetails from "./BookDetails";
 import NewBookForm from "./NewBookForm";
 
-const BookCard = ({ book, setBook, onDeleteBook }) => {
+const BookCard = ({ book, setBook, onDeleteBook, handlePrice }) => {
 const books = book.map((b) => {
     return (
         <BookDetails 
         b= {b}
         key = {b.id}
         onDeleteBook={onDeleteBook}
+        handlePrice={handlePrice}
         />
     );
 })

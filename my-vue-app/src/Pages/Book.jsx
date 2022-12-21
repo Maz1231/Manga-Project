@@ -29,6 +29,13 @@ const Book = () => {
       setBook(removeBook)
     }
 
+    function handlePrice(updatedPrice) {
+      setPlayer((book) =>
+          book.map((bookPos) => {
+          return bookPos.id === updatedPrice.id ? updatedPrice : bookPos;
+      })
+      )};
+
     const showBook = book.filter((t) => {
       return t.title.toLowerCase().includes(searchBook.toLowerCase())
     })
@@ -43,6 +50,7 @@ const Book = () => {
         book={showBook} 
         setBook={setBook}
         onDeleteBook={handleDeleteBooks}
+        handlePrice={handlePrice}
         />
       </div>)
   
