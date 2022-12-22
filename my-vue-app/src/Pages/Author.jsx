@@ -19,6 +19,9 @@ const Author = () => {
         });
       }, []);
 
+      
+
+     
 
     function handleDeleteAuthors(authorDelete) {
       const removeAuthor = author.filter(
@@ -31,7 +34,9 @@ const Author = () => {
       return t.first_name.toLowerCase().includes(searchAuthor.toLowerCase())
     })
 
-      
+    
+
+
    
 
     return ( 

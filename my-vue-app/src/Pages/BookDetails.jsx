@@ -35,8 +35,8 @@ const handleUpdatePrice = () => {
 
   return ( 
  <div>
-    <div className="card" style={{display: "flex", flexWrap: "wrap"}}>
-    <img src={image} alt="divisionImage" />
+    <div className="card">
+    <img src={image} alt="bookImage" />
     <div className="container">
       <div className="titles">
         {title}
