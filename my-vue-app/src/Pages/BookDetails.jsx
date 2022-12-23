@@ -11,7 +11,7 @@ function handleDeleteClick() {
   })
   .then((r) => r.json())
   .then(() => {
-    onDeleteBook(d);
+    onDeleteBook(b);
   });
 }
 

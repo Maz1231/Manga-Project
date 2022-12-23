@@ -9,6 +9,7 @@ import SignIn from "./SignIn";
 import Books from "./pages/Book"
 import Authors from "./pages/Author"
 import Categories from "./pages/Category"
+import Stores from "./pages/Store"
 
 
 function App() {
@@ -56,6 +57,9 @@ console.log("***user: ", user)
           </Route>
           <Route path="/authors">
             <Authors />
+          </Route>
+          <Route path="/stores">
+            <Stores />
           </Route>
           <Route path="/categories">
             <Categories />
