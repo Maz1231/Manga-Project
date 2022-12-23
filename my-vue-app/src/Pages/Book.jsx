@@ -22,6 +22,7 @@ const Book = () => {
     
 
     function handleDeleteBooks(bookDelete) {
+      console.log(bookDelete)
       const removeBook = book.filter(
         (b) => b.id !== bookDelete.id
       );
@@ -29,7 +30,7 @@ const Book = () => {
     }
 
     function handlePrice(updatedPrice) {
-      setPlayer((book) =>
+      setPrice((book) =>
           book.map((bookPos) => {
           return bookPos.id === updatedPrice.id ? updatedPrice : bookPos;
       })

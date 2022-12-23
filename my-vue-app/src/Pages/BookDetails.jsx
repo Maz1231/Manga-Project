@@ -9,10 +9,7 @@ function handleDeleteClick() {
   fetch(`/api/books/${b.id}`, {
     method: "DELETE",
   })
-  .then((r) => r.json())
-  .then(() => {
-    onDeleteBook(b);
-  });
+  onDeleteBook(b)
 }
 
 const handleUpdatePrice = () => {

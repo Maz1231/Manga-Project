@@ -8,10 +8,7 @@ function handleDeleteClick() {
   fetch(`/api/authors/${a.id}`, {
     method: "DELETE",
   })
-  .then((r) => r.json())
-  .then(() => {
-    onDeleteAuthor(d);
-  });
+  onDeleteAuthor(a)
 }
 
   return ( 

@@ -8,10 +8,7 @@ function handleDeleteClick() {
   fetch(`/api/stores/${s.id}`, {
     method: "DELETE",
   })
-  .then((r) => r.json())
-  .then(() => {
-    onDeleteStore(s);
-  });
+  onDeleteStore(s);
 }
 
   return ( 
