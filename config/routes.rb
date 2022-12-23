@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :stores
+  resources :stores, only: [:index, :show, :create, :update]
   resources :books
   resources :categories
   resources :authors

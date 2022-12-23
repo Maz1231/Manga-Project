@@ -5,8 +5,7 @@ class CreateStores < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :description
       t.integer :price
-      t.string :rating
-      t.string :stock
+      
 
       t.timestamps
     end

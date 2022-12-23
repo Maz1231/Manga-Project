@@ -26,6 +26,42 @@ c4 = Category.create(name: "Love")
 c5 = Category.create(name: "YEs")
 
 
+
+puts "Creating store..."
+
+Store.create(name: "JOJO'S BIZARRE ADVENTURE", description: "STONE OCEAN JOTARO PURPLE TEE",  image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/TSM1QMFJOJ_1_1600x.png?v=1670272919", price: 24.99)
+Store.create(name: "JOJO'S BIZARRE ADVENTURE", description: "STONE OCEAN NARCISSI DIVER LAVENDER TEE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/TSM1QMJJOJ_1_1600x.png?v=1670274618", price: 24.99)
+Store.create(name: "JOJO'S BIZARRE ADVENTURE", description: "STONE OCEAN ERMES MINT TEE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/TSM1QMGJOJ_1_1600x.png?v=1670274030", price: 29.99)
+Store.create(name: "JOJO'S BIZARRE ADVENTURE", description: "STONE OCEAN JOYLENE WHITE TEE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/TSM1QMMJOJ_1_1600x.png?v=1670275239", price: 29.99)
+Store.create(name: "COWBOY BEBOP", description: "COWBOY BEBOP SOCKS BOX SET", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/CRA1PTDCBP_1_1600x.png?v=1669760563", price: 19.20)
+Store.create(name: "YU YU HAKUSHO", description: "YU YU HAKUSHO SOCKS BOX SET", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/CRM1Y3HYYH_1_3a5bdc39-d7fa-4374-b431-d4307f011a2c_1600x.png?v=1669761925", price: 19.20)
+Store.create(name: "DRAGON BALL Z", description: "DRAGON BALL Z SOCKS BOX SET", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/CRM2739DBZ_1_1600x.png?v=1669762471", price: 19.20)
+Store.create(name: "HUNTER X HUNTER", description: "HUNTER X HUNTER SOCKS BOX SET", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/CRM1Y3KHXH_1_1600x.png?v=1669762849", price: 29.99)
+Store.create(name: "BERSERK", description: "GUTS BLACK TIE DYE TEE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/TSM549JCRU_1_1600x.png?v=1666191132", price: 29.99)
+Store.create(name: "CYBERPUNK: EDGERUNNERS", description: "LUCY BLACK LONG SLEEVE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/LSM5GAXCPR_1_1600x.png?v=1666638980", price: 35.99)
+Store.create(name: "CYBERPUNK: EDGERUNNERS", description: "DAVID MARTINEZ BLACK HOODIE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/HDM592HCPR_1_1600x.png?v=1663275662", price: 35.99)
+Store.create(name: "ONE PIECE FILM: RED", description: "ONE PIECE FILM: RED GROUP BLACK LONG SLEEVE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/LSA5CJ8OPR_1_1600x.png?v=1665000326", price: 35.99)
+Store.create(name: "JOJO'S BIZARRE ADVENTURE", description: "KISHIBE ROHAN BLACK LONG SLEEVE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/LSM2DVSJOJ_1_1600x.png?v=1666812782", price: 35.99)
+Store.create(name: "CYBERPUNK: EDGERUNNERS", description: "SANDEVISTAN SPEEDWARE BLACK LONG SLEEVE TEE", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/LSM592GCPR_1_1600x.png?v=1663274733", price: 39.99)
+Store.create(name: "DORAEMON", description: "DORAEMON SLING BAG", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/MMU1A8QDMN_1_1600x.png?v=1671132710", price: 49.99)
+Store.create(name: "DRAGON BALL", description: "KAME HOUSE VARSITY JACKET", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/OWM1YAADBO_1_1600x.png?v=1671134365", price: 89.99)
+Store.create(name: "ONE PIECE", description: "STRAW HATS HOODED SHIRT", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/HDM2CYSONP_1_1600x.png?v=1670970302", price: 99.99)
+Store.create(name: "NARUTO", description: "KAKASHI MINI CONVERTIBLE BACKPACK", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/MPF1LJ1NAR_1_1600x.png?v=1671207066", price: 65.99)
+Store.create(name: "EVANGELION", description: "EVANGELION MINI CONVERTIBLE BACKPACK", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/MPF1LHQNGE_1_1600x.png?v=1671208522", price: 65.99)
+Store.create(name: "TOKYO GHOUL", description: "KEN KANEKI SLIDES", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/MSA1F6GTGH_1_1600x.jpg?v=1671223537", price: 20.99)
+Store.create(name: "COWBOY BEBOP", description: "COWBOY BEBOP COLOR BLOCK ANORAK", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/OWM1W66CBP_ecomm_1600x.jpg?v=1668528123", price: 75.99)
+Store.create(name: "YU YU HAKUSHO", description: "YUYU HAKUSHO COLOR BLOCK ANORAK", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/OWM1W6EYYH_ecomm_1600x.jpg?v=1668526678", price: 75.99)
+Store.create(name: "HUNTER X HUNTER", description: "HUNTER X HUNTER COLOR BLOCK ANORAK", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/OWM1W6AHXH_ecomm_1600x.jpg?v=1668526313", price: 75.99)
+Store.create(name: "MY HERO ACADEMIA X HELLO KITTY", description: "MY HERO ACADEMIA X HELLO KITTY TIE DYE LOUNGE SET", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/CMF1V2NMHK-ecomm_1600x.jpg?v=1668013257", price: 70.99)
+Store.create(name: "NARUTO", description: "HIDDEN LEAF VILLAGE VARSITY JACKET", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/OWM1VLPNAR_09_1600x.jpg?v=1667920012", price: 90.99)
+Store.create(name: "TOEI ANIMATION", description: "TOEI HEX BLACK JOGGERS", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/ZTM29XUTAM_ecomm1_1600x.jpg?v=1667858657", price: 39.99)
+Store.create(name: "SPY X FAMILY", description: "THE FORGERS BLACK JOGGERS", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/ZTM2L71CRU_front_1600x.png?v=1658261056", price: 39.99)
+Store.create(name: "HAIKYU!!", description: "KARASUNO HIGH BLACK JOGGERS", image: "https://cdn.shopify.com/s/files/1/0070/1700/5113/products/ZTM0AP0CRU_1600x.png?v=1635188687", price: 39.99)
+
+
+
+
+
 puts "Creating books..."
 
 Book.create(title: "Berserk", isbn: "0-4749-8285-8", year: "1989", price: 19.99, buy: "9.3/10", image: "https://thebiem.com/wp-content/uploads/2019/05/berserk.jpg.webp", description: "Berserk mainly centers around Guts’ character, born from his mother’s corpse, who becomes a mercenary because he doesn’t know anything else he could do. He spends his life on the battlefield, fighting because he doesn’t know any better. The Band of the Hawk, under the tutelage of their leader, Griffith, takes Guts in. The manga then chronicles his journey with the troop as he tries to make his way up the ranks and combines greed for power with the desperation to discover his true purpose in life.", author_id: a5.id, category_id: c3.id)
