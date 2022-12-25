@@ -38,7 +38,7 @@ const handleUpdatePrice = () => {
       <div className="titles">
         {title}
         <button className="deleteBtn" onClick={handleDeleteClick}>
-          Trash this Book!
+          Delete this Book!
         </button>
         </div>
         <ul className="divisionStats">

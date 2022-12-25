@@ -20,7 +20,7 @@ function handleDeleteClick() {
       <div className="titles">
         {first_name} {last_name}
         <button className="deleteBtn" onClick={handleDeleteClick}>
-          Kick this Author!
+          Remove this Author!
         </button>
         </div>
         <ul className="authors">
