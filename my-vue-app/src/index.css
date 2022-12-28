@@ -10,9 +10,9 @@
 
   color-scheme: light dark;
   color: rgba(60, 53, 53, 0.87);
-  /* background-image: url(https://i.pinimg.com/originals/66/72/dd/6672ddd7cb1bb95b9fbdf0c780edc71c.jpg), url(https://i.pinimg.com/originals/66/72/dd/6672ddd7cb1bb95b9fbdf0c780edc71c.jpg); */
+  background-image: url(https://i.pinimg.com/originals/66/72/dd/6672ddd7cb1bb95b9fbdf0c780edc71c.jpg), url(https://i.pinimg.com/originals/66/72/dd/6672ddd7cb1bb95b9fbdf0c780edc71c.jpg);
   background-position: center;
-  /* background-repeat: no-repeat, repeat; */
+  background-repeat: no-repeat, repeat;
 
 
   font-synthesis: none;
@@ -41,8 +41,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 5px solid rgb(103, 73, 103);
-  background-color: rgb(228, 201, 228);
+  border-bottom: 5px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   
 }
 
@@ -56,12 +56,12 @@ header {
 header a {
   font-size: 17px;
   display: inline-block;
-  background-color: #fffdff;
-  border: 5px solid rgb(1, 1, 1);
+  background-color: #000000;
+  border: 5px solid rgb(255, 255, 255);
   margin: 2rem;
   padding: 1rem;
   text-decoration: none;
-  color: rgb(14, 14, 14);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   cursor: pointer;
   width: 70px;
@@ -74,7 +74,7 @@ header a {
 } */
 
 form {
-  background-color: #e2bae4;
+  background-color: #000000;
   border: 10px solid rgb(248, 248, 248);
   display: flex;
   flex-direction: column;
@@ -112,11 +112,13 @@ form button[type="submit"] {
   position: relative;
   margin-bottom: 40px;
   border-radius: 10px;
-  background-color: rgb(168, 61, 61);
+  background-color: rgba(222, 191, 191, 0.461);
   border: 2px solid rgb(0, 0, 0);
   font-size: 18px;
   overflow: hidden;
   cursor: pointer;
+  color: #eeeeee;
+  font-size: large;
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
@@ -126,19 +128,17 @@ form button[type="submit"] {
   font-weight: bold
 }
 
-.welcome {
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-  color: yellow;
-  background-color: black;
-}
+
 
 .signUpE li {
   color: red;
   display: flex;
   justify-content: center;
   margin: 1em
+}
+
+.login {
+  color: white;
 }
 
 .loginE {
@@ -157,7 +157,7 @@ form button[type="submit"] {
     position: relative;
     margin-bottom: 40px;
     border-radius: 10px;
-    background-color: rgb(168, 61, 61);
+    background-color: rgb(87, 59, 59);
     border: 2px solid rgb(0, 0, 0);
     font-size: 18px;
     overflow: hidden;
@@ -236,7 +236,7 @@ grid-auto-rows: auto;
  
 grid-gap: 1rem;
   position: relative;
-  background: #222;
+  background: rgb(158, 89, 89);
   border: 1px solid #dd2476;
   color: rgba(250, 250, 250, 0.8);
   margin-bottom: 2rem;
@@ -247,8 +247,10 @@ grid-gap: 1rem;
 
 .container1 {
   position: relative;
-  background: #222;
-  border: 1px solid #dd2476;
-  color: rgba(250, 250, 250, 0.8);
+  background: rgb(233, 178, 178);
+  border: 1px solid #0e0006;
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2rem;
+  font-size: larger;
 }
+

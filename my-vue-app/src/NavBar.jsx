@@ -11,7 +11,7 @@ function NavBar({ user, setUser }) {function handleLogoutClick() {
   }
   
   return (
-    <header>
+    <header className="NavBar">
       <div className="website">
         <NavLink  to="/" >Manga</NavLink>
       </div>

@@ -3,13 +3,14 @@ import React from "react";
 import StoreDetails from "./StoreDetails";
 import NewStoreFrom from "./NewStoreForm";
 
-const StoreCard = ({ store, setStore, onDeleteStore}) => {
+const StoreCard = ({ store, setStore, onDeleteStore, handlePrice }) => {
 const stores = store.map((s) => {
     return (
         <StoreDetails 
         s= {s}
         key = {s.id}
         onDeleteStore={onDeleteStore}
+        handlePrice={handlePrice}
         />
     );
 })

@@ -30,9 +30,17 @@ const Store = () => {
       setStore(removeStore)
     }
 
-    const showStore = store.filter((t) => {
-      return t.name.toLowerCase().includes(searchStore.toLowerCase())
-    })
+    function handlePrice(updatedPrice) {
+      setPrice((store) =>
+          store.map((storePos) => {
+          return storePos.id === updatedPrice.id ? updatedPrice : storePos;
+      })
+      )};
+
+
+    // const showStore = store.filter((t) => {
+    //   return t.name.toLowerCase().includes(searchStore.toLowerCase())
+    // })
 
     
 
@@ -43,9 +51,10 @@ const Store = () => {
       <div>
         <StoreSearch searchStore={searchStore} onSearchStore={setSearchStore}/>
         <StoreCard 
-        store={showStore} a
+        store={store} a
         setStore={setStore}
         onDeleteStore={handleDeleteStores}
+        handlePrice={handlePrice}
         />
       </div>)
   

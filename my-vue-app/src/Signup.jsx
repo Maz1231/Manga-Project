@@ -77,7 +77,7 @@ import React, { useState } from "react";
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete="current-password"
         />
-        <button className="formBtn" type="submit">KICK START NOW</button>
+        <button className="formBtn" type="submit">Join the Anime World</button>
       </form>
     </div>
   );
