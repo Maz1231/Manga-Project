@@ -95,7 +95,7 @@ function NewBookForm({book, setBook}) {
                 onChange={(e) => setDescription(e.target.value)}
                 >
                 </input>
-                <button className="b" type="submit"> Enter Store!</button>
+                <button className="b" type="submit"> Enter Book!</button>
             </form>
         </div>
     )

@@ -42,15 +42,15 @@ const handleUpdatePrice = () => {
         </button>
         </div>
         <ul className="stores">
-          <li>Desc: {description}</li>
-          <li>Price: ${price}</li>
-          <li> 
+          <ul>Desc: {description}</ul>
+          <ul>Price: ${price}</ul>
+          <ul> 
         <input 
       type="text" 
       onChange = {(e)=>{setPrice(e.target.value)}}
       value={prices} 
       />
-        <button className="update" onClick={handleUpdatePrice}>Update Price</button></li>
+        <button className="update" onClick={handleUpdatePrice}>Update Price</button></ul>
         </ul>
       </div>
       </div>

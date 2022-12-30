@@ -14,9 +14,9 @@ function handleDeleteClick() {
   return ( 
  
     <div>
-    <div className="card">
+    <div className="card2">
     <img src={image} alt="AuthorImage" />
-    <div className="container">
+    <div className="container2">
       <div className="titles">
         {first_name} {last_name}
         <button className="deleteBtn" onClick={handleDeleteClick}>
