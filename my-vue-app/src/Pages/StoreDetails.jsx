@@ -31,7 +31,7 @@ const handleUpdatePrice = () => {
 
   return ( 
  
-    <div>
+    <div className="cardContainer">
     <div className="card1">
     <img src={image} alt="AuthorImage" />
     <div className="container1">
@@ -39,6 +39,9 @@ const handleUpdatePrice = () => {
         {name}
         <button className="deleteBtn" onClick={handleDeleteClick}>
           Kick this Item!
+        </button>
+        <button className="addToCart">
+          Add to Cart!
         </button>
         </div>
         <ul className="stores">

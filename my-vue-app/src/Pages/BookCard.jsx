@@ -23,7 +23,7 @@ const books = book.map((b) => {
             />
             {/* <PlayerDetails></PlayerDetails> */}
             <div style={{display: "flex", flexWrap: "wrap"}}>
-            <div className="allCards">
+            <div>
             {books}
         </div> 
         </div>

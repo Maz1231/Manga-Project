@@ -36,9 +36,9 @@ const Book = () => {
       })
       )};
 
-    const showBook = book.filter((t) => {
-      return t.title.toLowerCase().includes(searchBook.toLowerCase())
-    })
+    // const showBook = book.filter((t) => {
+    //   return t.title.toLowerCase().includes(searchBook.toLowerCase())
+    // })
 
       //the issue for the form ^^^
    
@@ -47,7 +47,7 @@ const Book = () => {
       <div>
         <BookSearch searchBook={searchBook} onSearchBook={setSearchBook}/>
         <BookCard 
-        book={showBook} 
+        book={book} 
         setBook={setBook}
         onDeleteBook={handleDeleteBooks}
         handlePrice={handlePrice}

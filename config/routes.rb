@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :stores, only: [:index, :show, :create, :update]
   resources :books
-  resources :categories
   resources :authors
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"

@@ -40,6 +40,9 @@ const handleUpdatePrice = () => {
         <button className="deleteBtn" onClick={handleDeleteClick}>
           Delete this Book!
         </button>
+        <button className="addToCart">
+          Add to Cart!
+        </button>
         </div>
         <ul className="divisionStats">
           <li>Isbn: {isbn}</li>

@@ -20,7 +20,7 @@ const authors = author.map((a) => {
             author = {author}
             setAuthor = {setAuthor}
             />
-            <div className="allCards">
+            <div className="allCards1">
             {authors}
         </div> 
         </div>

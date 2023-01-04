@@ -35,17 +35,17 @@ function NewAuthorForm({author, setAuthor}) {
     return (
         <div>
             
-            <form onSubmit={handleSumbit}>
-                <h3 className="create"> Create A Author!</h3>
+            <form className="form2" onSubmit={handleSumbit}>
+                <h3 className="create"> Create Author!</h3>
                 <input
-                placeholder="FirstName"
+                placeholder="First Name"
                 name="FirstName"
                 value={first_name}
                 onChange={(e) => setFirstName(e.target.value)}
                 >
                 </input>
                 <input
-                placeholder="LastName"
+                placeholder="Last Name"
                 name="LastName"
                 value={last_name}
                 onChange={(e) => setLastName(e.target.value)}

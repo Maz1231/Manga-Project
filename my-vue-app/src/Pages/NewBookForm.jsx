@@ -8,6 +8,8 @@ function NewBookForm({book, setBook}) {
     const [buy, setBuy] = useState("");
     const [image, setImage] = useState("");
     const [description, setDescription] = useState("");
+    const [author, setAuthor] = useState("");
+    
 
 
     function handleSumbit(e) {
@@ -26,10 +28,13 @@ function NewBookForm({book, setBook}) {
                 buy: buy,
                 image: image,
                 description: description,
+                author: author,
+
             }),
         })
         .then((r) => r.json())
         .then((newBook) => {
+            console.log(newBook)
             setBook([...book, newBook])
         });
         setTitle("");
@@ -39,12 +44,13 @@ function NewBookForm({book, setBook}) {
         setBuy("");
         setImage("");
         setDescription("");
+        setAuthor("");
     }
 
     return (
         <div>
             
-            <form onSubmit={handleSumbit}>
+            <form className="form1" onSubmit={handleSumbit}>
                 <h3 className="create"> Create A Book!</h3>
                 <input
                 placeholder="Title"

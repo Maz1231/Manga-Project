@@ -2,7 +2,7 @@
 function SignIn({ user }) {
   return (
     <h1 className="welcome">
-      Welcome to the Manga Store! {user.username}!
+      Welcome {user.username}!
     </h1>
   )
 }

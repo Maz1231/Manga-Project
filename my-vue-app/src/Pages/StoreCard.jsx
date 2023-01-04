@@ -21,7 +21,7 @@ const stores = store.map((s) => {
             store = {store}
             setStore = {setStore}
             />
-            <div className="allCards">
+            <div>
             {stores}
         </div> 
         </div>

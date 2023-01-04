@@ -5,31 +5,36 @@
 
 
 :root {
-  background-color: rgb(0, 0, 0);
+
   /* background-image: url(https://images7.alphacoders.com/125/1254946.jpg); */
-  padding: 3em;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background-color: #FAFAFA;
   background-image: url(https://images7.alphacoders.com/125/1254946.jpg);
+  
 }
 
 body {
-  background-color: rgb(255, 255, 255);
-  padding: 1.5em;
+  margin: 0;
+  padding: 0;
+  /* font-family: sans-serif; */
+  background-color: #FAFAFA;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   min-height: 100vh; */
-  font-family: Hack, monospace;
-  background-image: url(https://thumbs.dreamstime.com/b/vector-pink-sky-clouds-anime-clean-style-evening-sunset-background-234335822.jpg);
+  /* font-family: Hack, monospace; */
+  background-image: url(https://picstatio.com/large/95da7f/dark-sunset-sky-anime-girl-outdoor-art.jpg);
   
 
   
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
 }
 
 header {
@@ -40,18 +45,19 @@ header {
   border-bottom: 5px solid rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   color: #000000;
-  background-image: url(https://img.myloview.com/posters/vector-blue-sky-clouds-anime-clean-style-background-design-700-184099297.jpg);
+  background-image: url(https://picstatio.com/large/95da7f/dark-sunset-sky-anime-girl-outdoor-art.jpg);
   
 }
 
 .welcome {
-  display: flex;
+  /* background-image: url(https://thumbs.dreamstime.com/b/vector-pink-sky-clouds-anime-clean-style-evening-sunset-background-234335822.jpg); */
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   border-bottom: 5px solid rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
-  background-image: url(https://thumbs.dreamstime.com/b/vector-pink-sky-clouds-anime-clean-style-evening-sunset-background-234335822.jpg);
+  background-image: url(https://thumbs.dreamstime.com/b/vector-pink-sky-clouds-anime-clean-style-evening-sunset-background-234335822.jpg); */
 }
 
 .click{
@@ -67,7 +73,7 @@ header a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-image: url(https://img.myloview.com/posters/vector-blue-sky-clouds-anime-clean-style-background-design-700-184099297.jpg);
+  /* background-image: url(https://img.myloview.com/posters/vector-blue-sky-clouds-anime-clean-style-background-design-700-184099297.jpg); */
   
 }
 
@@ -90,7 +96,43 @@ form {
   background-image: url(https://images7.alphacoders.com/125/1254946.jpg); 
 }
 
+.form1 {
+  background-color: #000000;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  color: white;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  padding: 0 1rem 1rem;
+  background-image: url(https://picstatio.com/large/95da7f/dark-sunset-sky-anime-girl-outdoor-art.jpg); 
+}
 
+.form2 {
+  background-color: #000000;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  color: white;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  padding: 0 1rem 1rem;
+  background-image: url(https://ih0.redbubble.net/image.755067291.0854/flat,800x800,075,f.u1.jpg); 
+}
+
+.cardContainer {
+height: 100%;
+width: auto;
+display: inline-flex;
+}
 
 form input {
   height: 50px;
@@ -177,10 +219,14 @@ form button[type="submit"] {
 
     .allCards{
    
-    
-      justify-content: space-between;
-      flex-wrap: wrap;
+      
+      flex-direction: row;
       color: white; 
+      display: flex;
+      width: 100vw;
+
+
+
   
 
     
@@ -215,8 +261,48 @@ font-weight: bold;
 }
 
 .deleteBtn{
-  border-radius: 1em;
-  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid lighten(gray, 24%);
+  height: 48px;
+  padding: 0 24px 0 16px;
+  letter-spacing: .25px;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #f1f1f1;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg);
+  
+}
+
+.addToCart {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid lighten(gray, 24%);
+  height: 48px;
+  padding: 0 24px 0 16px;
+  letter-spacing: .25px;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #f1f1f1;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg);
+  
+}
+
+.update {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid lighten(gray, 24%);
+  height: 48px;
+  padding: 0 24px 0 16px;
+  letter-spacing: .25px;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #f1f1f1;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg);
+  
 }
 
 .welcome {
@@ -274,7 +360,7 @@ font-weight: bold;
 
 .container1 {
   content: "";
-      display: table;
+      display: inline-flex;
       clear: both;
   margin-bottom: 2rem;
   font-size: larger;
