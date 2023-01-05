@@ -9,9 +9,10 @@ import SignIn from "./SignIn";
 import Books from "./pages/Book"
 import Authors from "./pages/Author"
 import Stores from "./pages/Store"
+import Store from './components/Store';
 import Contact from './pages/contact/Contact';
-import ProductsList from "./Components/ProductsList";
-import ProductPage from "./Components/ProductPage";
+// import ProductsList from "./Components/ProductsList";
+// import ProductPage from "./Components/ProductPage";
 
 
 function App() {
@@ -63,15 +64,18 @@ console.log("***user: ", user)
           <Route path="/stores">
             <Stores />
           </Route>
+          <Route path="/store">
+            <Store />
+          </Route>
           <Route path="/contacts">
             <Contact />
           </Route>
-          <Route path="/ProductPage/:productId">
+          {/* <Route path="/ProductPage/:productId">
             <ProductPage />
           </Route>
           <Route path="/ProductPage">
             <ProductsList />
-          </Route>
+          </Route> */}
       </Switch>
     </main> 
     </BrowserRouter>

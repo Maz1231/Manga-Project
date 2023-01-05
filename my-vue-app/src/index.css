@@ -6,27 +6,34 @@
 
 :root {
 
-  /* background-image: url(https://images7.alphacoders.com/125/1254946.jpg); */
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  background-color: #FAFAFA;
-  background-image: url(https://images7.alphacoders.com/125/1254946.jpg);
-  
+  --margin-28: 28px;
+  --margin-48: 48px;
+  --padding-5: 5px;
+  --padding-10: 10px;
+  --padding-20: 20px;
+  --padding-40: 40px;
+  --font-18: 18px;
+  --font-20: 20px;
+  --font:'Nunito', sans-serif;
+  --demi-bold: 600;
+  --bold: 700;
+
+  --dark-red: #cc0000;
+  --light-grey: #f3f3f3;
+  --purple: #5e6ec9;
+  --dark-blue: rgb(17, 97, 201);
+  --grey: #c5c5c5;
+  --black: #111111;
+  --white: #ffffff;
+
 }
 
 body {
   margin: 0;
   padding: 0;
-  /* font-family: sans-serif; */
-  background-color: #FAFAFA;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 100vh; */
-  /* font-family: Hack, monospace; */
-  background-image: url(https://picstatio.com/large/95da7f/dark-sunset-sky-anime-girl-outdoor-art.jpg);
+  font-family: sans-serif;
+    background-color: var(--light-grey);
+  
   
 
   
@@ -657,17 +664,127 @@ font-weight: bold;
     
 }
 
-.card-body {
-  position: relative;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.468);
-  border: 2px solid rgb(0, 0, 0);
-  font-size: 18px;
-  overflow: hidden;
-  cursor: pointer;
-  color: #f6f6f6;
-  font-size: large;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+.header { 
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  width: 100%;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  color: #000000;
+  background-image: url(https://picstatio.com/large/95da7f/dark-sunset-sky-anime-girl-outdoor-art.jpg);
+  color: #e8e8e8;
 }
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--purple);
+  width: 100%;
+  height: 60px;
+}
+
+.nav__button {
+  border: none;
+  color: var(--white);
+  font-weight: var(--demi-bold);
+  font-size: var(--font-20);
+  background: transparent;
+  cursor: pointer;
+  margin-right: var(--margin-48);
+}
+
+.title {
+  text-align: center;
+  margin-top: var(--margin-28);
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow:  2px 4px 4px var(--grey);
+  margin: var(--margin-28);
+}
+
+.product__img {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  border-radius: 20px 20px 14px 14px;
+}
+
+.product__name, .item__name {
+  font-weight: var(--bold);
+  font-size: var(--font-20);
+  margin-top: var(--margin-28);
+}
+
+.product__description {
+  margin: calc(var(--margin-28)*0.3);
+}
+
+.button {
+  height: 40px;
+  width: 170px;
+  border-radius: 20px;
+  padding: var(--padding-10);
+  border: none;
+  color: var(--white);
+  font-weight: var(--bold);
+  cursor: pointer;
+}
+
+.button--add, .button--checkout{
+  background-color: var(--dark-blue);
+  margin-bottom: var(--margin-28);
+}
+
+.button--remove {
+  border: solid 2px var(--dark-red);
+  background:transparent;
+  color: var(--black);
+  padding: 0 var(--padding-5);
+}
+
+.button--remove:hover {
+  background-color: var(--dark-red);
+  color: var(--white);
+}
+
+.button--checkout:hover {
+  background-color: var(--purple);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart {
+  padding: var(--padding-20);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 60px;
+}
+
+
