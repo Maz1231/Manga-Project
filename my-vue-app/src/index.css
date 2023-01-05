@@ -485,7 +485,7 @@ font-weight: bold;
 .book-content {
   display: flex;
   justify-content: space-between;
-  background-color: #e8dfdf;
+  background-color: #ffffffe4;
   
 }
 
@@ -637,3 +637,37 @@ font-weight: bold;
   color: #fff;
 }
 
+.cardM-1 {
+  display: grid;
+ 
+    grid-template-columns: repeat(3, 1fr);
+     
+    grid-auto-rows: auto;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: rgb(87, 59, 59);
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/965/883/624/manga-one-piece-wallpaper-preview.jpg);
+    
+}
+
+.card-body {
+  position: relative;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.468);
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #f6f6f6;
+  font-size: large;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}

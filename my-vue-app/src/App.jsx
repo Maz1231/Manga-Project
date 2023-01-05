@@ -9,6 +9,9 @@ import SignIn from "./SignIn";
 import Books from "./pages/Book"
 import Authors from "./pages/Author"
 import Stores from "./pages/Store"
+import Contact from './pages/contact/Contact';
+import ProductsList from "./Components/ProductsList";
+import ProductPage from "./Components/ProductPage";
 
 
 function App() {
@@ -59,6 +62,15 @@ console.log("***user: ", user)
           </Route>
           <Route path="/stores">
             <Stores />
+          </Route>
+          <Route path="/contacts">
+            <Contact />
+          </Route>
+          <Route path="/ProductPage/:productId">
+            <ProductPage />
+          </Route>
+          <Route path="/ProductPage">
+            <ProductsList />
           </Route>
       </Switch>
     </main> 
