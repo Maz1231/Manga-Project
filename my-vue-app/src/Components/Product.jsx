@@ -254,4 +254,4 @@ function Product(props) {
   return <>{product}</>;
 }
 
-export { Product };
+export default Product;

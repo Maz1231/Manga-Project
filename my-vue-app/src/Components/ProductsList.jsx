@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Product } from "./Product";
+import  Product  from "./Product";
 
 function ProductsList() {
   const url = "https://fakestoreapi.com/products";
