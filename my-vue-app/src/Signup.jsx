@@ -50,7 +50,7 @@ import React, { useState } from "react";
       }
       </ul>
       </h1>
-      <form onSubmit={handleSubmit}>
+      <form className="form8" onSubmit={handleSubmit}>
         <h1 className="signup">Sign Up</h1>
         <input
           className="input1"

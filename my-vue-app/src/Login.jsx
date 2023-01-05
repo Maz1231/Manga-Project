@@ -41,7 +41,7 @@ function Login({ setUser }) {
       {errors}
       </h1>
       
-      <form onSubmit={handleSubmit}>
+      <form className="form7" onSubmit={handleSubmit}>
         <h1 className="login">Login</h1>
         <label htmlFor="username"></label>
         <input

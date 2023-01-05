@@ -64,7 +64,7 @@ const handleUpdatePrice = () => {
           <div className="circular-progress" />
         </div>
         <div className="progress-statistics">
-          <p className="percent-complete">{year}</p>
+          <p className="percent-complete">Rating {buy}</p>
           <p className="completed"></p>
         </div>
         <div className={"progress-divider"} />
