@@ -27,7 +27,7 @@ const Author = () => {
       const removeAuthor = author.filter(
         (a) => a.id !== authorDelete.id
       );
-      setBook(removeAuthor)
+      setAuthor(removeAuthor)
     }
 
     const showAuthor = author.filter((t) => {

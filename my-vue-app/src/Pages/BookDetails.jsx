@@ -31,36 +31,59 @@ const handleUpdatePrice = () => {
 
 
   return ( 
- <div>
-    <div className="card">
-    <img src={image} alt="bookImage" />
-    <div className="container">
-      <div className="titles">
-        {title}
-        <button className="deleteBtn" onClick={handleDeleteClick}>
-          Delete this Book!
-        </button>
-        <button className="addToCart">
-          Add to Cart!
-        </button>
+    <div className="book">
+    <div className="book-content">
+      <div className="book-info">
+        <div className="book-category">
+          {price}$
         </div>
-        <ul className="divisionStats">
-          <li>Isbn: {isbn}</li>
-          <li>Price: {price}$</li>  
-          <li>Year: {year}</li>
-          <li>Rating: {buy}</li> 
-          <li>Desc: {description}</li>
-          <li> 
-        <input 
+        <div className="book-title">
+          {title}
+        </div>
+
+        <div className="book-author">
+          {description}
+        </div>
+
+        <div className="container-buttons">
+          <button className="action-button" type="button">Comments</button>
+          <div className="vertical-divider" />
+          <button className="action-button" type="button" onClick={handleDeleteClick}>Remove</button>
+          <div className="vertical-divider" />
+          <input 
       type="text" 
       onChange = {(e)=>{setPrice(e.target.value)}}
       value={prices} 
       />
-        <button className="update" onClick={handleUpdatePrice}>Update Price</button></li>
-        </ul>
+          <button className="action-button" type="button" onClick={handleUpdatePrice}>Update</button>
+        </div>
       </div>
+      <div className="progress-container">
+      <img src={image} alt="BookImage" />
+        <div className="circular-progress-container">
+          <div className="circular-progress" />
+        </div>
+        <div className="progress-statistics">
+          <p className="percent-complete">{year}</p>
+          <p className="completed"></p>
+        </div>
+        <div className={"progress-divider"} />
       </div>
+      <div className="current-chapter-container">
+      <div class="flex space-x-2 justify-center">
+  <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-600 hover:shadow-lg focus:bg-blue-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center">
+    {isbn}
+    <span class="inline-block py-1 px-1.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-red-600 text-white rounded ml-2">7</span>
+  </button>
+</div>
+        <div>
+          <p className="current-chapter-label">CURRENT CHAPTER</p>
+          <p className="current-chapter-number"></p>
+        </div>
+        <button className="update-progress-button" type="button" onClick={buy}>Add To Cart!</button>
       </div>
+    </div>
+  </div>
  
     )}
 

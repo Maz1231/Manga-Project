@@ -12,6 +12,7 @@ function NavBar({ user, setUser }) {function handleLogoutClick() {
   
   return (
     <header className="NavBar">
+      
       <div className="website">
         <NavLink  to="/" >Manga</NavLink>
       </div>
@@ -27,7 +28,7 @@ function NavBar({ user, setUser }) {function handleLogoutClick() {
           </>
         ) : (
           <div>
-            <NavLink to="/signup">Signup</NavLink>
+            <NavLink  to="/signup">Signup</NavLink>
             <NavLink to="/login">Login</NavLink>
           </div>
         )}
