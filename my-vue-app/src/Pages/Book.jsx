@@ -8,6 +8,7 @@ const Book = () => {
     const [book, setBook] = useState([]);
     const [searchBook, setSearchBook] = useState("")
     
+    
    
     
     
@@ -30,15 +31,15 @@ const Book = () => {
     }
 
     function handlePrice(updatedPrice) {
-      setPrice((book) =>
+      setBook((book) =>
           book.map((bookPos) => {
           return bookPos.id === updatedPrice.id ? updatedPrice : bookPos;
       })
       )};
 
-    // const showBook = book.filter((t) => {
-    //   return t.title.toLowerCase().includes(searchBook.toLowerCase())
-    // })
+    const showBook = book.filter((t) => {
+      return t.title.toLowerCase().includes(searchBook.toLowerCase())
+    })
 
       //the issue for the form ^^^
    
@@ -47,7 +48,7 @@ const Book = () => {
       <div>
         <BookSearch searchBook={searchBook} onSearchBook={setSearchBook}/>
         <BookCard 
-        book={book} 
+        book={showBook} 
         setBook={setBook}
         onDeleteBook={handleDeleteBooks}
         handlePrice={handlePrice}

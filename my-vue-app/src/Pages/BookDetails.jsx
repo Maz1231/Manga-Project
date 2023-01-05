@@ -46,7 +46,9 @@ const handleUpdatePrice = () => {
         </div>
         <ul className="divisionStats">
           <li>Isbn: {isbn}</li>
-          <li>Year: {year} Price: {price} buy: {buy}</li>     
+          <li>Price: {price}$</li>  
+          <li>Year: {year}</li>
+          <li>Rating: {buy}</li> 
           <li>Desc: {description}</li>
           <li> 
         <input 

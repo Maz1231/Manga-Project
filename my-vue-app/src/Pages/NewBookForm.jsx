@@ -5,10 +5,9 @@ function NewBookForm({book, setBook}) {
     const [isbn, setIsbn] = useState("");
     const [year, setYear] = useState("");
     const [price, setPrice] = useState("");
-    const [buy, setBuy] = useState("");
     const [image, setImage] = useState("");
     const [description, setDescription] = useState("");
-    const [author, setAuthor] = useState("");
+    const [author_id, setAuthor] = useState("");
     
 
 
@@ -25,10 +24,9 @@ function NewBookForm({book, setBook}) {
                 isbn: isbn,
                 year: year,
                 price: price,
-                buy: buy,
                 image: image,
                 description: description,
-                author: author,
+                author_id: author_id,
 
             }),
         })
@@ -41,7 +39,6 @@ function NewBookForm({book, setBook}) {
         setIsbn("");
         setYear("");
         setPrice("");
-        setBuy("");
         setImage("");
         setDescription("");
         setAuthor("");
@@ -81,10 +78,10 @@ function NewBookForm({book, setBook}) {
                 >
                 </input>
                 <input
-                placeholder="Buy"
-                name="Buy"
-                value={buy}
-                onChange={(e) => setBuy(e.target.value)}
+                placeholder="Author"
+                name="Author"
+                value={author_id}
+                onChange={(e) => setAuthor(e.target.value)}
                 >
                 </input>
                 <input

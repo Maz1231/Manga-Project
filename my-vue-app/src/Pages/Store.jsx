@@ -31,7 +31,7 @@ const Store = () => {
     }
 
     function handlePrice(updatedPrice) {
-      setPrice((store) =>
+      setStore((store) =>
           store.map((storePos) => {
           return storePos.id === updatedPrice.id ? updatedPrice : storePos;
       })

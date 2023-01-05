@@ -22,7 +22,7 @@ const books = book.map((b) => {
             setBook = {setBook}
             />
             {/* <PlayerDetails></PlayerDetails> */}
-            <div style={{display: "flex", flexWrap: "wrap"}}>
+            <div>
             <div>
             {books}
         </div> 
