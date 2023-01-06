@@ -13,6 +13,7 @@
 
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +23,15 @@ body {
   
 
   
+}
+
+.homePage {
+   margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background-color: #FAFAFA;
+  background-image: url(https://images7.alphacoders.com/125/1254946.jpg);
 }
 
 code {
@@ -53,18 +63,20 @@ header {
   border-bottom: 5px solid rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   background-image: url(https://thumbs.dreamstime.com/b/vector-pink-sky-clouds-anime-clean-style-evening-sunset-background-234335822.jpg); */
+  color: black;
 }
 
 .click{
   font-weight: 800;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
   color: transparent;
+  
   font-size: 40px;
   margin: 0 10px;
   padding: 12px 5px;
   display: inline-block;
   line-height: 1;
-  background-image: url(https://thumbs.dreamstime.com/b/vector-pink-sky-clouds-anime-clean-style-evening-sunset-background-234335822.jpg);
+  background-color: #1f5156;
 }
 header a {
   
@@ -98,19 +110,20 @@ form {
 }
 
 .form1 {
-  background-color: #000000;
-  border: 2px solid rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  color: white;
-  margin-top: 3em;
-  margin-bottom: 5em;
-  padding: 0 1rem 1rem;
-  background-image: url(https://picstatio.com/large/95da7f/dark-sunset-sky-anime-girl-outdoor-art.jpg); 
+  color: #FFA0C9;
+	border-top: 1px solid #FFD2D2;
+	border-left: 1px solid #FFD2D2;
+	border-right: 1px solid #FFD2D2;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #1f5156;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+	font-weight: normal;
+	font-size: 12px;
 }
 
 .form2 {
@@ -151,8 +164,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
   color: white;
   margin-top: 3em;
@@ -167,14 +180,14 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
   color: white;
   margin-top: 3em;
   margin-bottom: 5em;
   padding: 0 1rem 1rem;
-  background-image: url(https://ih0.redbubble.net/image.755067291.0854/flat,800x800,075,f.u1.jpg); 
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e026ac-fb2a-4feb-b836-afa84c37da95/desxqn2-4f0c259a-b1a4-43a9-99e7-bdbd4bd6350d.jpg/v1/fill/w_1280,h_720,q_75,strp/lake_and_bridge_anime_background_by_idonlikedesigngrafic_desxqn2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYTllMDI2YWMtZmIyYS00ZmViLWI4MzYtYWZhODRjMzdkYTk1XC9kZXN4cW4yLTRmMGMyNTlhLWIxYTQtNDNhOS05OWU3LWJkYmQ0YmQ2MzUwZC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.-o7QqbxRW9FuNHce_2bEUQhuQ_KaE4H-NETgf0rH174); 
 }
 
 .cardContainer {
@@ -191,10 +204,11 @@ form input {
 form button[type="submit"] {
   width: 100%;
   height: 50px;
-  background-color: rgb(255, 255, 255);
+  background-color: #1f5156;
   color: rgb(12, 12, 12);
   font-weight: bold;
   font-size: 20px;
+
 }
 
 .signup, .login{
@@ -304,10 +318,10 @@ font-weight: bold;
    border-radius: 3px;
  } 
 
- .update{
+ /* .update{
   border-radius: .3em;
   margin-left: .4em;
-}
+} */
 
 .deleteBtn{
   display: flex;
@@ -364,23 +378,44 @@ font-weight: bold;
   
 }
 
-.BookSearch{
-  background-color: #000000;
-  border: 2px solid rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 55%;
-  margin: 40px auto;
-  line-height: 56px;
-  position: relative;
-  
+.AuthorSearch {
+  background-color: #0074D9;
+  color: #f2f2f2;
+  float: right;
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
 
+}
+.BookSearch{
   
-  background-image: url(https://thumbs.dreamstime.com/b/vector-pink-sky-clouds-anime-clean-style-evening-sunset-background-234335822.jpg); 
- 
+    /* Roundness */
+    background-color: #1f5156;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    
   
 }
+
+
+
+/* .search {
+  background-color: #0074D9;
+  color: #f2f2f2;
+  float: right;
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+} */
 
 .labelName {
   position: middle;
@@ -449,14 +484,14 @@ font-weight: bold;
   position: relative;
   margin-bottom: 40px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.468);
+  background-color: rgba(0, 0, 0, 0.768);
   border: 2px solid rgb(0, 0, 0);
   font-size: 18px;
   overflow: hidden;
   cursor: pointer;
   color: #f6f6f6;
   font-size: large;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+  box-shadow: 0 4px 21px -12px rgb(0, 0, 0);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 
  
@@ -521,8 +556,8 @@ font-weight: bold;
 }
 
 .book {
-  background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-royal-golden-blue-mandala-art-background-with-border-invitation-card-wedding-picture-image_1596347.jpg);
-  border-radius: 4px;
+  background-image: url(https://images.pling.com/img/00/00/62/69/92/1890883/clouds-sky-anime1.jpg);
+  border-radius: 100px;
   border: 1px solid #000000;
   padding: 2rem;
 }
@@ -530,8 +565,10 @@ font-weight: bold;
 .book-content {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffffe4;
-  
+  background-color: #fefefed1;
+  border-radius: 40px;
+  border: 5px solid #000000;
+
 }
 
 .book-info {
@@ -567,7 +604,7 @@ font-weight: bold;
 .book-category,
 .book-title {
   font-weight: 700;
-  color: #121212;
+  color: #4386bf;
 }
 
 .container-buttons {
@@ -818,9 +855,11 @@ font-weight: bold;
 }
 
 .main {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+width: auto;
+display: inline-flex;
   --margin-28: 28px;
   --margin-48: 48px;
   --padding-5: 5px;
@@ -843,6 +882,10 @@ font-weight: bold;
 
 .cart {
   padding: var(--padding-20);
+  margin-bottom: 2rem;
+  font-size: larger;
+  border: 3px solid #fff;
+  background-color: #ffffff;
 }
 
 .item {
@@ -852,4 +895,72 @@ font-weight: bold;
   gap: 60px;
 }
 
+body {
+  padding-top: 4px;
+}
 
+h2 {
+  text-align: center;
+  color: purple;
+}
+
+h3 {
+  color: white;
+}
+
+li {
+  color: grey;
+  margin: 12px;
+}
+
+hr.new1 {
+  border-top: 1px dashed grey;
+}
+
+.button-edits {
+  margin: 40px;
+}
+
+.card-width {
+  color: white;
+  padding: 20px;
+  margin: 40px;
+}
+
+.create-post {
+  margin-top: 0;
+}
+
+.edit-button {
+  position: absolute;
+  top: 20px;
+  right: 55px;
+  color: cyan;
+}
+
+.delete-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: cyan;
+}
+
+.cancel-button {
+  position: absolute;
+  top: 545px;
+  left: 90px;
+}
+
+.cancel-update-button {
+  position: absolute;
+  top: 545px;
+  left: 160px;
+}
+
+.button-css:active {
+  transform: translateY(3px);
+}
+
+.button-css:focus {
+  outline: 0;
+}

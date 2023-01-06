@@ -46,7 +46,7 @@ const handleUpdatePrice = () => {
         </div>
 
         <div className="container-buttons">
-          <button className="action-button" type="button">Comments</button>
+          <button className="action-button" type="button">{year}</button>
           <div className="vertical-divider" />
           <button className="action-button" type="button" onClick={handleDeleteClick}>Remove</button>
           <div className="vertical-divider" />

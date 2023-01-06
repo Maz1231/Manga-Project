@@ -23,7 +23,7 @@ function NavBar({ user, setUser }) {function handleLogoutClick() {
             <NavLink to="/authors">Authors</NavLink>
       
             <NavLink to="/store">Store</NavLink>
-            
+            <NavLink to="/posts">Blogs</NavLink>
             <NavLink to="/contacts">Contact</NavLink>
           
             <NavLink to="/">

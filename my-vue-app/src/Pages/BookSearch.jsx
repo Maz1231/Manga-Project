@@ -3,7 +3,7 @@ import React from "react";
 function BookSearch( {searchBook, onSearchBook} ) {
     return (
         <div className="BookSearch">
-            <label className="labelName">Search YOUR favorite Book!</label>
+            <label className="labelName">Search!</label>
             <input 
             type="text"
             id="search"

@@ -11,12 +11,13 @@ import Authors from "./pages/Author"
 import Stores from "./pages/Store"
 import Store from './components/Store';
 import Contact from './pages/contact/Contact';
-// import ProductsList from "./Components/ProductsList";
-// import ProductPage from "./Components/ProductPage";
+import DisplayAllPosts from "./components/DisplayAllPosts";
+
 
 
 function App() {
   const [user, setUser] = useState(null);
+  
 
   useEffect(() => {
     // auto-login
@@ -69,6 +70,9 @@ console.log("***user: ", user)
           </Route>
           <Route path="/contacts">
             <Contact />
+          </Route>
+          <Route path="/posts">
+            <DisplayAllPosts />
           </Route>
           {/* <Route path="/ProductPage/:productId">
             <ProductPage />

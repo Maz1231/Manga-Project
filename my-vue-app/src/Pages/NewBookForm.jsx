@@ -1,4 +1,6 @@
 import React, { useEffect, useState }  from "react";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function NewBookForm({book, setBook}) {
     const [title, setTitle] = useState("");
@@ -45,10 +47,12 @@ function NewBookForm({book, setBook}) {
     }
 
     return (
-        <div>
+       
+       <div>
             
             <form className="form1" onSubmit={handleSumbit}>
-                <h3 className="create"> Create A Book!</h3>
+                <h3 className="create">!</h3>
+                
                 <input
                 placeholder="Title"
                 name="Title"
