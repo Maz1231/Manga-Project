@@ -27,6 +27,19 @@ function App() {
         }
       });
     }, []);
+
+    function App() {
+      const [user, setUser] = useState(null);
+      
+    
+      useEffect(() => {
+        // auto-login
+        fetch("api/me").then((r) => {
+        if (r.ok) {
+        r.json().then((user) => setUser(user));
+            }
+          });
+        }, []);
     
 console.log("***user: ", user)
   return (
